@@ -27,7 +27,8 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		String plane = "M2,4 L2,10 L22,10 A6,1,0,0,0,28,9 A6,2,0,0,0,24,7 A8,8,0,0,0,20,6  A12,12,0,0,0,14,7.5 L7,8 L5,4 Z M23,9 A3,1,0,0,0,20,8 A13,13,0,0,0,15,9 Z";
 
 		String plane2 = "M10,4 L12,4 L14,8 L22,7 A4,1,0,0,1,26,8 A4,1,0,0,1,22,9 L10,9 Z";
-		String plane3 = "M18,4 L20,4 L26,10 L20,16 L18,16 L20,10 Z M18,10 L17.5,11 L12.5,11 L12,10 L12.5,9 L17.5,9 Z";
+		//String plane3 = "M18,4 L20,4 L26,10 L20,16 L18,16 L20,10 Z M18,10 L17.5,11 L12.5,11 L12,10 L12.5,9 L17.5,9 Z";
+		String plane3 = "M18,4 L20,4 L26,10 L20,16 L18,16 L20,10 Z    M18,8 L14,8 L14,6 L17.25,6 Z    M18,12 L17.25,14 L14,14 L14,12 Z";
 
 		String plane4 = "M14,14 L14,12 L20,6 L26,12 L26,14 L20,12 Z M19,14 L20,13.5 L21,14 L21,20 L19,20Z";
 
@@ -59,8 +60,8 @@ public class DesertSkyRangersIcon extends SvgIcon {
 			DesertSkyRangersIcon favicon = new DesertSkyRangersIcon().resize( 64 );
 			DesertSkyRangersIcon icon = new DesertSkyRangersIcon().resize( 512 );
 
-			//new VectorImageWriter().save( favicon, Paths.get( System.getProperty( "user.dir" ), "favicon.png" ) );
-			//new VectorImageWriter().save( icon, Paths.get( System.getProperty( "user.dir" ), "icon.png" ) );
+			new VectorImageWriter().save( favicon, Paths.get( System.getProperty( "user.dir" ), "favicon.png" ) );
+			new VectorImageWriter().save( icon, Paths.get( System.getProperty( "user.dir" ), "icon.png" ) );
 		} catch( Exception exception ) {
 			exception.printStackTrace();
 		}
