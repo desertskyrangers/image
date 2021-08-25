@@ -2,10 +2,21 @@ package com.desertskyrangers;
 
 import com.avereon.zerra.image.SvgIcon;
 import com.avereon.zerra.image.VectorImageWriter;
+import javafx.scene.paint.Color;
 
 import java.nio.file.Paths;
 
 public class DesertSkyRangersIcon extends SvgIcon {
+
+	private final boolean renderPlane;
+
+	public DesertSkyRangersIcon() {
+		this( false );
+	}
+
+	public DesertSkyRangersIcon( boolean renderPlane ) {
+		this.renderPlane = renderPlane;
+	}
 
 	@Override
 	protected void doRender() {
@@ -28,11 +39,13 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 		String plane2 = "M10,4 L12,4 L14,8 L22,7 A4,1,0,0,1,26,8 A4,1,0,0,1,22,9 L10,9 Z";
 		//String plane3 = "M18,4 L20,4 L26,10 L20,16 L18,16 L20,10 Z M18,10 L17.5,11 L12.5,11 L12,10 L12.5,9 L17.5,9 Z";
-		String plane3 = "M18,4 L20,4 L26,10 L20,16 L18,16 L20,10 Z    M18,8 L14,8 L14,6 L17.25,6 Z    M18,12 L17.25,14 L14,14 L14,12 Z";
+		String plane3 = "M18,4 L20,4 L26,10 L20,16 L18,16 L20,10 Z";
+		String wisps = "M18,8 L14,8 L14,6 L17.25,6 Z M18,12 L17.25,14 L14,14 L14,12 Z";
 
 		String plane4 = "M14,14 L14,12 L20,6 L26,12 L26,14 L20,12 Z M19,14 L20,13.5 L21,14 L21,20 L19,20Z";
 
-		String sunCactusClip = "M0,0 L0,18 A3,3,0,0,1,4,15 L4,14 A4,4,0,0,1,12,14 L12,17 A3,3,0,0,1,16,20 A7,7,0,0,1,14,26  L32,26 L32,0 Z " + plane3;
+		String sunCactusClip = "M0,0 L0,18 A3,3,0,0,1,4,15 L4,14 A4,4,0,0,1,12,14 L12,17 A3,3,0,0,1,16,20 A7,7,0,0,1,14,26  L32,26 L32,0 Z";
+		//if( renderPlane ) sunCactusClip = sunCactusClip + " " + plane3;
 
 		//		clip( sunTopClip );
 		//		fill( sun );
@@ -43,22 +56,26 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		//		clip( null );
 
 		clip( sunCactusClip );
-		fill( sun );
+		fill( sun, Color.web( "#808000" ) );
 		clip( null );
 
 		//fill( horizon );
 
-		fill( cactus );
+		fill( cactus, Color.web( "#008000" ) );
 
-		//fill( plane );
+		if( renderPlane ) {
+			fill( plane3, Color.web( "#202020" ) );
+			fill( wisps, Color.web( "#606000" ) );
+		}
 	}
 
 	public static void main( String[] commands ) {
-		proof( new DesertSkyRangersIcon() );
+		// FIXME proof() uses the non-param constructor
+		proof( new DesertSkyRangersIcon( true ) );
 
 		try {
 			DesertSkyRangersIcon favicon = new DesertSkyRangersIcon().resize( 64 );
-			DesertSkyRangersIcon icon = new DesertSkyRangersIcon().resize( 512 );
+			DesertSkyRangersIcon icon = new DesertSkyRangersIcon( true ).resize( 512 );
 
 			new VectorImageWriter().save( favicon, Paths.get( System.getProperty( "user.dir" ), "favicon.png" ) );
 			new VectorImageWriter().save( icon, Paths.get( System.getProperty( "user.dir" ), "icon.png" ) );
