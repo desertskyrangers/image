@@ -11,11 +11,9 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 	private final boolean renderPlane;
 
-	private static final Color[] BASIC = new Color[]{ Color.web( "#A06000" ), Color.web( "#202020" ), Color.web( "#008000" ) };
+	private static final Color[] DESERT = new Color[]{ Color.web( "#b37c52" ), Color.web( "#4D4033" ), Color.web( "#6A806F" ) };
 
-	private static final Color[] DESERT_HIGHWAY = new Color[]{ Color.web( "#b37c52" ), Color.web( "#4D4033" ), Color.web( "#6A806F" ) };
-
-	private final Color[] theme = DESERT_HIGHWAY;
+	private final Color[] theme = DESERT;
 
 	public DesertSkyRangersIcon() {
 		this( true );
@@ -58,7 +56,7 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 		try {
 			DesertSkyRangersIcon favicon = new DesertSkyRangersIcon( false ).resize( 64 );
-			DesertSkyRangersIcon icon = new DesertSkyRangersIcon().resize( 512 );
+			DesertSkyRangersIcon icon = new DesertSkyRangersIcon().resize( 128 );
 
 			new VectorImageWriter().save( favicon, Paths.get( System.getProperty( "user.dir" ), "favicon.png" ) );
 			new VectorImageWriter().save( icon, Paths.get( System.getProperty( "user.dir" ), "icon.png" ) );
