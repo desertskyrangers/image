@@ -58,8 +58,8 @@ public class DesertSkyRangersIcon extends SvgIcon {
 			DesertSkyRangersIcon favicon = new DesertSkyRangersIcon( false ).resize( 64 );
 			DesertSkyRangersIcon icon = new DesertSkyRangersIcon().resize( 128 );
 
-			new VectorImageWriter().save( favicon, Paths.get( System.getProperty( "user.dir" ), "favicon.png" ) );
-			new VectorImageWriter().save( icon, Paths.get( System.getProperty( "user.dir" ), "icon.png" ) );
+			new VectorImageWriter().save( favicon, Paths.get( System.getProperty( "user.dir" ), "public", "favicon.png" ) );
+			new VectorImageWriter().save( icon, Paths.get( System.getProperty( "user.dir" ), "public", "logo.png" ) );
 		} catch( Exception exception ) {
 			exception.printStackTrace();
 		}
