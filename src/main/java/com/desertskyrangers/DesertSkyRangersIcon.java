@@ -26,6 +26,34 @@ public class DesertSkyRangersIcon extends SvgIcon {
 	@Override
 	protected void doRender() {
 		super.doRender();
+		doRender2();
+	}
+
+	protected void doRender2() {
+		String sun = circle( 16, 16, 15 );
+
+		//String mountain = "M2,30 L2,26 L8,20 L10,22 L16,16 L22,22 L24,20 L30,26 L30,30 Z";
+		String smallMountain = "M1,31 L1,27 L9,23 C10,22.5 10.75,22.25 11.5,22.25 C12.25,22.25 13,22.5 14,23 C18,25 26,29 30,29 L31,29 L31,31 Z";
+		String bigMountain = "M15,22.5 L18,21     C19,20.5 19.75,20.25 20.5,20.25 C21.25,20.25 22,20.5 23,21 L31,25 L31,28 L30,28 C26,28 19,24.5 15,22.5 Z";
+		String curvedMountain = smallMountain + bigMountain;
+
+		String plane = "M16,6 L28,12 L27,13 L16,11 L5,13 L4,12 Z";
+		String straightWisps = "M6,14 L8.5,14 L11.5,18 L10,18 M26,14 L22,18 L20.5,18 L23.5,14 Z";
+		//String curvedWisps = "M13,15 L10,12 L12,11.75 A6,6,0,0,0,13,15 Z M19,15 L22,12 L20,11.75 A6,6,0,0,1,19,15 Z";
+
+		String sunMountainClip = "M0,0 L0,26.5 L9,22 C10,21.5 10.75,21.25 11.5,21.25 C12.25,21.25 13,21.5 14,22 L18,20 C19,19.5 19.75,19.25 20.5,19.25 C21.25,19.25 22,19.5 23,20  L32,24.5 L32,0 Z";
+
+		clip( sunMountainClip );
+		fill( sun, theme[ 0 ] );
+		clip( null );
+
+		fill( curvedMountain, theme[ 2 ] );
+		fill( plane, theme[ 1 ] );
+		fill( straightWisps, Colors.mix( theme[ 0 ], theme[ 1 ], 0.5 ) );
+	}
+
+	protected void doRender1() {
+		super.doRender();
 
 		String sun = circle( 16, 16, 14 );
 
