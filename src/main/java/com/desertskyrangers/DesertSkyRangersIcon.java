@@ -39,10 +39,11 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 		String pa = "11";
 		String plane = "M16,6 L28,12 L27,13 L16," + pa + " L5,13 L4,12 Z";
-		//String straightWisps = "M6,14 L8.5,14 L11.5,18 L10,18 M26,14 L22,18 L20.5,18 L23.5,14 Z";
-		String curvedWisps = "M13,15 L10,12 L12,11.75 A6,6,0,0,0,13,15 Z M19,15 L22,12 L20,11.75 A6,6,0,0,1,19,15 Z";
-		//String exhaust = "M13,13 L14.25,18 L15.5,18 L15,13 Z M17,13 L16.5,18 L17.75,18 L19,13 Z";
+		//String straightVortexes = "M6,14 L8.5,14 L11.5,18 L10,18 M26,14 L22,18 L20.5,18 L23.5,14 Z";
+		String straightVortexes = "M6,14 L8.5,13.6 L11.5,18 Z M26,14 L20.5,18 L23.5,13.6 Z";
+		String curvedVortexes = "M7.5,13.75 L10,16.5 A10.48875058760044,10.48875058760044,0,0,1,6,14 Z M24.5,13.75 L26,14 A10.48875058760044,10.48875058760044,0,0,1,22,16.5 Z";
 		String exhaust = "M12,13 L13.75,18 L14.75,18 L14,13 Z M18,13 L17.25,18 L18.25,18 L20,13 Z";
+		String wisps = curvedVortexes;
 
 		String sunMountainClip = "M0,0 L0,26.5 L9,22 C10,21.5 10.75,21.25 11.5,21.25 C12.25,21.25 13,21.5 14,22 L18,20 C19,19.5 19.75,19.25 20.5,19.25 C21.25,19.25 22,19.5 23,20  L32,24.5 L32,0 Z";
 
@@ -52,7 +53,7 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 		fill( curvedMountain, theme[ 2 ] );
 		fill( plane, theme[ 1 ] );
-		fill( exhaust, Colors.mix( theme[ 0 ], theme[ 1 ], 0.5 ) );
+		fill( wisps, Colors.mix( theme[ 0 ], theme[ 1 ], 0.5 ) );
 	}
 
 	protected void doRender1() {
