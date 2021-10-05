@@ -14,7 +14,7 @@ public class DesertSkyRangersIcon extends SvgIcon {
 	// Color theme is: sun, plane, mountains
 	private static final Color[] ARIZONA = new Color[]{ Color.web( "#b37c52" ), Color.web( "#4D4033" ), Color.web( "#6A806F" ) };
 
-	private static final Color[] UTAH = new Color[]{ Color.web( "#b37c52" ), Color.web( "#403830" ), Color.web( "#786F52" ) };
+	private static final Color[] UTAH = new Color[]{ Color.web( "#b37c52" ), Color.web( "#403830" ), Color.web( "#9C916D" ) };
 
 	private final Color[] theme = UTAH;
 
