@@ -1,8 +1,8 @@
 package com.desertskyrangers;
 
-import com.avereon.zerra.color.Colors;
-import com.avereon.zerra.image.SvgIcon;
-import com.avereon.zerra.image.VectorImageWriter;
+import com.avereon.zarra.color.Colors;
+import com.avereon.zarra.image.SvgIcon;
+import com.avereon.zarra.image.VectorImageWriter;
 import javafx.scene.paint.Color;
 
 import java.nio.file.Paths;
@@ -40,8 +40,8 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		String mountains = foreMountain + backMountain;
 
 		String vrr = "10.48875058760044,10.48875058760044";
-		String plane = "M16,6 L28,12 L27,13 L16,11 L5,13 L4,12 Z";
-		String wisps = "M7.5,13.75 L10,16.5 A" + vrr + ",0,0,1,6,14 Z M24.5,13.75 L26,14 A" + vrr + ",0,0,1,22,16.5 Z";
+		String plane = "M16,7 L28,13 L27,14 L16,12 L5,14 L4,13 Z";
+		String wisps = "M7.5,14.75 L10,17.5 A" + vrr + ",0,0,1,6,15 Z M24.5,14.75 L26,15 A" + vrr + ",0,0,1,22,17.5 Z";
 
 		String sunMountainClip = "M0,0 L0,26.5 L9,22 C10,21.5 10.75,21.25 11.5,21.25 C12.25,21.25 13,21.5 14,22 L18,20 C19,19.5 19.75,19.25 20.5,19.25 C21.25,19.25 22,19.5 23,20  L32,24.5 L32,0 Z";
 

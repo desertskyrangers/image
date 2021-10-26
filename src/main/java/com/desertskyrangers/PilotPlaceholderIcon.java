@@ -1,7 +1,7 @@
 package com.desertskyrangers;
 
-import com.avereon.zerra.image.SvgIcon;
-import com.avereon.zerra.image.VectorImageWriter;
+import com.avereon.zarra.image.SvgIcon;
+import com.avereon.zarra.image.VectorImageWriter;
 
 import java.nio.file.Paths;
 
