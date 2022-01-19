@@ -1,0 +1,24 @@
+plugins {
+	id 'java'
+}
+
+group = 'com.desertskyrangers'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_17
+
+repositories {
+	maven {
+		url "https://repo.avereon.com/central"
+	}
+	maven {
+		url "https://repo.avereon.com/avn"
+	}
+}
+
+dependencies {
+	implementation 'com.avereon:zarra:0.8-SNAPSHOT'
+}
+
+test {
+	useJUnitPlatform()
+}
