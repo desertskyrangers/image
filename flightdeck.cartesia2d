@@ -1,0 +1,267 @@
+{
+  "layers" : {
+    "2abe608a-123b-4559-9da5-95f13bde5138" : {
+      "draw-width" : "0.05",
+      "draw-paint" : "#8080ffff",
+      "shapes" : {
+        "c27fcceb-5b7f-4b1a-b39f-44a5556720b6" : {
+          "origin-control" : "10.5,-3.0,0.0",
+          "id" : "c27fcceb-5b7f-4b1a-b39f-44a5556720b6",
+          "shape" : "curve",
+          "point-control" : "12.25,-2.0,0.0",
+          "point" : "12.75,-2.0,0.0"
+        },
+        "8a131f77-da43-47d5-94fe-8b3d63b67309" : {
+          "origin-control" : "18.0,-9.0,0.0",
+          "id" : "8a131f77-da43-47d5-94fe-8b3d63b67309",
+          "shape" : "curve",
+          "point-control" : "20.0,-7.0,0.0",
+          "point" : "20.0,-7.0,0.0",
+          "origin" : "16.8,-11.4,0.0"
+        },
+        "cf2b1541-ef0a-4cb6-aef9-37a883cd9fd1" : {
+          "extent" : -7.6366097319855095,
+          "rotate" : 0.0,
+          "fill-paint" : "none",
+          "shape" : "arc",
+          "origin" : "105.89999999999995,-105.89999999999995,0.0",
+          "start" : 138.8183048659928,
+          "id" : "cf2b1541-ef0a-4cb6-aef9-37a883cd9fd1",
+          "type" : "OPEN",
+          "radius" : 127.42064196981579
+        },
+        "147cd069-7ca4-486c-b565-e3df5219093d" : {
+          "origin-control" : "21.5,-5.5,0.0",
+          "id" : "147cd069-7ca4-486c-b565-e3df5219093d",
+          "shape" : "curve",
+          "point-control" : "24.0,-4.0,0.0",
+          "point" : "25.5,-4.0,0.0",
+          "origin" : "20.0,-7.0,0.0"
+        },
+        "657b25de-64ed-4e9a-9dc8-fd9046031dac" : {
+          "extent" : 7.6366097319855095,
+          "rotate" : -90.0000000000001,
+          "shape" : "arc",
+          "origin" : "-73.89999999999978,73.9000000000001,0.0",
+          "start" : 41.18169513400733,
+          "id" : "657b25de-64ed-4e9a-9dc8-fd9046031dac",
+          "type" : "OPEN",
+          "radius" : 127.42064196981579
+        },
+        "66518b9e-1e5d-4678-91fe-2c5fec5de72f" : {
+          "origin-control" : "21.0,-9.0,0.0",
+          "id" : "66518b9e-1e5d-4678-91fe-2c5fec5de72f",
+          "shape" : "curve",
+          "point-control" : "24.5,-6.0,0.0",
+          "point" : "25.5,-4.0,0.0",
+          "origin" : "16.8,-11.4,0.0"
+        }
+      },
+      "name" : "canopy",
+      "layers" : { },
+      "id" : "2abe608a-123b-4559-9da5-95f13bde5138",
+      "draw-cap" : "round",
+      "order" : 1
+    },
+    "dfcff67b-f2c4-49ae-8e22-520bc4f56a7b" : {
+      "draw-width" : "0.05",
+      "draw-paint" : "#808080ff",
+      "shapes" : {
+        "7a8f090f-ba5a-4d2a-bac0-db06c6036d1d" : {
+          "id" : "7a8f090f-ba5a-4d2a-bac0-db06c6036d1d",
+          "shape" : "line",
+          "point" : "24.0,-11.0,0.0",
+          "origin" : "24.0,-8.5,0.0"
+        },
+        "c5c8e625-1ec4-403a-9d23-0592401fa48c" : {
+          "id" : "c5c8e625-1ec4-403a-9d23-0592401fa48c",
+          "shape" : "line",
+          "point" : "32.0,-32.0,0.0",
+          "origin" : "0.0,-32.0,0.0"
+        },
+        "8c1cad66-cbaa-4eca-ab77-d8374e4c278f" : {
+          "origin-control" : "20.164207951608173,-14.835792048391827,0.0",
+          "id" : "8c1cad66-cbaa-4eca-ab77-d8374e4c278f",
+          "shape" : "curve",
+          "point-control" : "14.489253323403098,-19.59116538669028,0.0",
+          "point" : "10.502458715058498,-23.50245871505849,0.0",
+          "origin" : "24.0,-11.0,0.0"
+        },
+        "7766226c-01af-423e-a944-3a02645d5aa5" : {
+          "id" : "7766226c-01af-423e-a944-3a02645d5aa5",
+          "shape" : "line",
+          "point" : "12.0,-18.0,0.0",
+          "origin" : "8.5,-21.5,0.0"
+        },
+        "4bc3b4a2-f104-4f0e-b973-815ea2e121ac" : {
+          "origin-control" : "26.469265438008375,-7.370007201944199,0.0",
+          "id" : "4bc3b4a2-f104-4f0e-b973-815ea2e121ac",
+          "shape" : "curve",
+          "point-control" : "29.080363680023712,-3.839272639952573,0.0",
+          "point" : "30.0,-2.0,0.0",
+          "origin" : "24.5,-9.481144051246854,0.0"
+        },
+        "0823808e-84a7-4164-94f7-3843730d01d3" : {
+          "id" : "0823808e-84a7-4164-94f7-3843730d01d3",
+          "shape" : "line",
+          "point" : "24.5,-8.0,0.0",
+          "origin" : "24.0,-8.5,0.0"
+        },
+        "5a44d75f-b96e-4d63-80b6-4789aa66f3fc" : {
+          "id" : "5a44d75f-b96e-4d63-80b6-4789aa66f3fc",
+          "shape" : "line",
+          "point" : "7.5,-14.5,0.0",
+          "origin" : "5.5,-16.5,0.0"
+        },
+        "85a4ff23-d16b-4e5b-8f8d-717984ba89c3" : {
+          "id" : "85a4ff23-d16b-4e5b-8f8d-717984ba89c3",
+          "shape" : "line",
+          "point" : "5.5,-16.5,0.0",
+          "origin" : "7.5,-21.5,0.0"
+        },
+        "27bbf5c8-2c4b-4d42-ab14-88bf367b6cdc" : {
+          "id" : "27bbf5c8-2c4b-4d42-ab14-88bf367b6cdc",
+          "shape" : "line",
+          "point" : "0.0,-32.0,0.0",
+          "origin" : "0.0,0.0,0.0"
+        },
+        "c5e6ac8f-4119-4de8-a979-b3e398279855" : {
+          "origin-control" : "25.0,-6.0,0.0",
+          "id" : "c5e6ac8f-4119-4de8-a979-b3e398279855",
+          "shape" : "curve",
+          "point-control" : "22.0,-9.0,0.0",
+          "point" : "16.5,-12.0,0.0",
+          "origin" : "26.0,-4.0,0.0"
+        },
+        "ada5cf3c-afa1-45fb-baf3-ea866f5e06cd" : {
+          "origin-control" : "27.0,-3.0,0.0",
+          "id" : "ada5cf3c-afa1-45fb-baf3-ea866f5e06cd",
+          "shape" : "curve",
+          "point-control" : "29.400000000000002,-2.0,0.0",
+          "point" : "30.0,-2.0,0.0",
+          "origin" : "26.0,-4.0,0.0"
+        },
+        "20b41b45-b216-42c4-a48f-62373929af84" : {
+          "id" : "20b41b45-b216-42c4-a48f-62373929af84",
+          "shape" : "line",
+          "point" : "8.999999999999996,-25.0,0.0",
+          "origin" : "7.0,-23.0,0.0"
+        },
+        "27a471f6-6ba1-4661-98c5-45a59fcefd52" : {
+          "id" : "27a471f6-6ba1-4661-98c5-45a59fcefd52",
+          "shape" : "line",
+          "point" : "9.499999999999996,-24.5,0.0",
+          "origin" : "7.5,-22.5,0.0"
+        },
+        "702f36fd-fc89-432b-aac2-d103f70109f9" : {
+          "id" : "702f36fd-fc89-432b-aac2-d103f70109f9",
+          "shape" : "line",
+          "point" : "2.0,-30.0,0.0",
+          "origin" : "5.0,-28.0,0.0"
+        },
+        "5339d562-1cd9-48af-9e06-aa0f8be96e53" : {
+          "origin-control" : "6.4,-24.6,0.0",
+          "id" : "5339d562-1cd9-48af-9e06-aa0f8be96e53",
+          "shape" : "curve",
+          "point-control" : "6.6000000000000005,-23.400000000000002,0.0",
+          "point" : "7.0,-23.0,0.0",
+          "origin" : "6.0,-25.0,0.0"
+        },
+        "7cc976fb-c422-41fa-89e2-e70c459fe15a" : {
+          "id" : "7cc976fb-c422-41fa-89e2-e70c459fe15a",
+          "shape" : "line",
+          "point" : "2.0,-30.0,0.0",
+          "origin" : "4.0,-27.0,0.0"
+        },
+        "4f96ca89-2cbf-4775-8b42-912c9b04d1b1" : {
+          "id" : "4f96ca89-2cbf-4775-8b42-912c9b04d1b1",
+          "shape" : "line",
+          "point" : "32.0,0.0,0.0",
+          "origin" : "0.0,0.0,0.0"
+        },
+        "a1f9d2a8-a64d-4a72-af85-6f5d772792b7" : {
+          "id" : "a1f9d2a8-a64d-4a72-af85-6f5d772792b7",
+          "shape" : "line",
+          "point" : "24.5,-9.5,0.0",
+          "origin" : "24.5,-8.0,0.0"
+        },
+        "900b7b79-c38f-483b-a130-2f2de4a200a8" : {
+          "origin-control" : "7.399999999999999,-25.6,0.0",
+          "id" : "900b7b79-c38f-483b-a130-2f2de4a200a8",
+          "shape" : "curve",
+          "point-control" : "8.599999999999994,-25.400000000000002,0.0",
+          "point" : "8.999999999999996,-25.0,0.0",
+          "origin" : "7.0,-26.0,0.0"
+        },
+        "8aab2248-8eee-4da1-9c06-c4b27ae3020f" : {
+          "id" : "8aab2248-8eee-4da1-9c06-c4b27ae3020f",
+          "shape" : "line",
+          "point" : "7.0,-26.0,0.0",
+          "origin" : "6.0,-25.0,0.0"
+        },
+        "783b230a-682a-43be-901f-6952d49d9941" : {
+          "origin-control" : "5.5,-26.5,0.0",
+          "id" : "783b230a-682a-43be-901f-6952d49d9941",
+          "shape" : "curve",
+          "point-control" : "5.0,-27.5,0.0",
+          "point" : "5.0,-28.0,0.0",
+          "origin" : "6.0,-26.0,0.0"
+        },
+        "647fb6d6-64df-4b3a-b71a-32e017a76767" : {
+          "id" : "647fb6d6-64df-4b3a-b71a-32e017a76767",
+          "shape" : "line",
+          "point" : "7.5,-21.5,0.0",
+          "origin" : "12.5,-16.5,0.0"
+        },
+        "d5f28991-67f4-4f2a-a98c-f74314adc836" : {
+          "origin-control" : "5.5,-26.5,0.0",
+          "id" : "d5f28991-67f4-4f2a-a98c-f74314adc836",
+          "shape" : "curve",
+          "point-control" : "4.5,-27.0,0.0",
+          "point" : "4.0,-27.0,0.0",
+          "origin" : "6.0,-26.0,0.0"
+        },
+        "6bb3b337-a3c0-4e7b-997c-37fef4708aba" : {
+          "id" : "6bb3b337-a3c0-4e7b-997c-37fef4708aba",
+          "shape" : "line",
+          "point" : "7.5,-14.5,0.0",
+          "origin" : "12.5,-16.5,0.0"
+        },
+        "449cbf16-3fc4-4334-954d-742055b307eb" : {
+          "origin-control" : "15.5,-14.0,0.0",
+          "id" : "449cbf16-3fc4-4334-954d-742055b307eb",
+          "shape" : "curve",
+          "point-control" : "14.0,-16.0,0.0",
+          "point" : "12.0,-18.0,0.0",
+          "origin" : "16.5,-12.0,0.0"
+        },
+        "75f324ad-a286-44b8-99bb-df85c256d885" : {
+          "id" : "75f324ad-a286-44b8-99bb-df85c256d885",
+          "shape" : "line",
+          "point" : "32.0,-32.0,0.0",
+          "origin" : "32.0,0.0,0.0"
+        },
+        "9d678d71-1730-4f4f-b600-31ceb1b80629" : {
+          "id" : "9d678d71-1730-4f4f-b600-31ceb1b80629",
+          "shape" : "line",
+          "point" : "8.5,-21.5,0.0",
+          "origin" : "7.5,-22.5,0.0"
+        },
+        "58f98f73-d2e6-4265-9c1c-9b390028fddc" : {
+          "id" : "58f98f73-d2e6-4265-9c1c-9b390028fddc",
+          "shape" : "line",
+          "point" : "10.502458715058498,-23.50245871505849,0.0",
+          "origin" : "9.499999999999996,-24.5,0.0"
+        }
+      },
+      "name" : "construction",
+      "layers" : { },
+      "id" : "dfcff67b-f2c4-49ae-8e22-520bc4f56a7b",
+      "draw-cap" : "round",
+      "order" : 0
+    }
+  },
+  "unit" : "centimeter",
+  "id" : "b8b3a3ee-3503-48ee-857f-f05468fc6e6c",
+  "codec-version" : "1"
+}
