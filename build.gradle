@@ -8,11 +8,14 @@ sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
 	maven {
-		url "https://repo.avereon.com/central"
-	}
-	maven {
+		name "avn"
 		url "https://repo.avereon.com/avn"
+		credentials {
+			username project.properties['avnUsername']
+			password project.properties['avnPassword']
+		}
 	}
+	mavenCentral()
 }
 
 dependencies {
