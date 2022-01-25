@@ -1,4 +1,4 @@
-package com.desertskyrangers;
+package org.desertskyrangers.image;
 
 import com.avereon.zarra.color.Colors;
 import com.avereon.zarra.image.SvgIcon;
