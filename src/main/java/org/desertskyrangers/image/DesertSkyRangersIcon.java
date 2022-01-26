@@ -16,7 +16,7 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 	private static final Color[] UTAH = new Color[]{ Color.web( "#b37c52" ), Color.web( "#403830" ), Color.web( "#9C916D" ) };
 
-	private final Color[] theme = UTAH;
+	public static final Color[] THEME = UTAH;
 
 	public DesertSkyRangersIcon() {
 		this( true );
@@ -24,11 +24,6 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 	public DesertSkyRangersIcon( boolean renderPlane ) {
 		this.renderPlane = renderPlane;
-	}
-
-	@Override
-	protected void doRender() {
-		super.doRender();
 		doRender2();
 	}
 
@@ -47,12 +42,12 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		String sunMountainClip = "M0,0 L0,26.5 L9,22 C10,21.5 10.75,21.25 11.5,21.25 C12.25,21.25 13,21.5 14,22 L18,20 C19,19.5 19.75,19.25 20.5,19.25 C21.25,19.25 22,19.5 23,20  L32,24.5 L32,0 Z";
 
 		clip( sunMountainClip );
-		fill( sun, theme[ 0 ] );
-		clip( null );
+		fill( sun, THEME[ 0 ] );
+		restore();
 
-		fill( mountains, theme[ 2 ] );
-		fill( plane, theme[ 1 ] );
-		fill( wisps, Colors.mix( theme[ 0 ], theme[ 1 ], 0.5 ) );
+		fill( mountains, THEME[ 2 ] );
+		fill( plane, THEME[ 1 ] );
+		fill( wisps, Colors.mix( THEME[ 0 ], THEME[ 1 ], 0.5 ) );
 	}
 
 	protected void doRender1() {
@@ -71,15 +66,15 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		//if( renderPlane ) sunCactusClip = sunCactusClip + " " + plane3;
 
 		clip( sunCactusClip );
-		fill( sun, theme[ 0 ] );
-		clip( null );
+		fill( sun, THEME[ 0 ] );
+		restore();
 
 		if( renderPlane ) {
-			fill( plane, theme[ 1 ] );
-			fill( wisps, Colors.translucent( theme[ 1 ], 0.4 ) );
+			fill( plane, THEME[ 1 ] );
+			fill( wisps, Colors.translucent( THEME[ 1 ], 0.4 ) );
 		}
 
-		fill( cactus, theme[ 2 ] );
+		fill( cactus, THEME[ 2 ] );
 	}
 
 	public static void main( String[] commands ) {
