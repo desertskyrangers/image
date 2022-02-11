@@ -3,31 +3,45 @@ package org.desertskyrangers.image;
 import com.avereon.zarra.image.SvgIcon;
 import com.avereon.zarra.image.VectorImage;
 import com.avereon.zarra.image.VectorImageWriter;
-import javafx.scene.shape.FillRule;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FlightDeckIcon extends SvgIcon {
 
+	private boolean flame;
+
 	public FlightDeckIcon() {
+		this( true );
+	}
+
+	public FlightDeckIcon( boolean flame ) {
+		this( flame, null );
+	}
+
+	public FlightDeckIcon( boolean flame, Paint paint  ) {
+
+		this.flame = flame;
+
 		// Wing
 		String wing = "M10,22 A109,109 0 0 0 22,10 A 109,109 0 0 0 10,22 Z";
 
 		// Fuselage
-		fill( "M30,2 C29,4 26.5,7.5 24.5,9.5 L24,8 L24,11 C20,15 14.5,19.5 9.5,24.5 L7.5,22.5 L12,18 C14,16 15.5,14 16.5,12 C22,9 25,6 26,4 C27,3 29.5,2 30,2 Z " + wing );
+		fill( "M30,2 C29,4 26.5,7.5 24.5,9.5 L24,8 L24,11 C20,15 14.5,19.5 9.5,24.5 L7.5,22.5 L12,18 C14,16 15.5,14 16.5,12 C22,9 25,6 26,4 C27,3 29.5,2 30,2 Z " + wing, paint, null );
 
 		// Canopy
-		fill( "M16.8,11.4 Q18,9 20,7 C21.5,5.5 24,4 25.5,4 C24.5,6 21,9 16.8,11.4 Z" );
+		fill( "M16.8,11.4 Q18,9 20,7 C21.5,5.5 24,4 25.5,4 C24.5,6 21,9 16.8,11.4 Z", paint, null );
 
 		// Tail
-		fill( "M7.5,21.5 L5.5,16.5 L7.5,14.5 L12.5,16.5 Z" );
+		fill( "M7.5,21.5 L5.5,16.5 L7.5,14.5 L12.5,16.5 Z", paint, null );
 
 		// Nozzle
-		fill( "M9.2,24.8 C8.6,25.4 7.4,25.6 7,26 L6,25 C6.4,24.6 6.6,23.4 7.2,22.8 Z" );
+		fill( "M9.2,24.8 C8.6,25.4 7.4,25.6 7,26 L6,25 C6.4,24.6 6.6,23.4 7.2,22.8 Z", paint, null );
 
 		// Flame
-		fill( "M2,30 L4,27 C 4.5,27 5.5,26.5 6,26 C 5.5,26.5 5,27.5 5,28 Z" );
+		if( this.flame ) fill( "M2,30 L4,27 C 4.5,27 5.5,26.5 6,26 C 5.5,26.5 5,27.5 5,28 Z", paint, null );
 	}
 
 	public static void main( String[] commands ) {
@@ -45,4 +59,5 @@ public class FlightDeckIcon extends SvgIcon {
 			exception.printStackTrace();
 		}
 	}
+
 }

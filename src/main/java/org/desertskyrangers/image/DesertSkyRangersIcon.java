@@ -4,6 +4,7 @@ import com.avereon.zarra.color.Colors;
 import com.avereon.zarra.image.SvgIcon;
 import com.avereon.zarra.image.VectorImageWriter;
 import javafx.scene.paint.Color;
+import javafx.scene.transform.Affine;
 
 import java.nio.file.Paths;
 
@@ -46,8 +47,17 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		restore();
 
 		fill( mountains, THEME[ 2 ] );
-		fill( plane, THEME[ 1 ] );
-		fill( wisps, Colors.mix( THEME[ 0 ], THEME[ 1 ], 0.5 ) );
+		if( renderPlane ) {
+			//fill( plane, THEME[ 1 ] );
+			//fill( wisps, Colors.mix( THEME[ 0 ], THEME[ 1 ], 0.5 ) );
+
+			double scale = 0.75;
+			double offsetX = 16 - (16 * scale) - 3;
+			double offsetY = 16 - (16 * scale);
+			transform( Affine.rotate( 15, 16, 16 ).createConcatenation( Affine.translate( offsetX, offsetY ) ).createConcatenation( Affine.scale( scale, scale ) ) );
+			draw( new FlightDeckIcon( false, THEME[ 1 ] ) );
+		}
+
 	}
 
 	protected void doRender1() {
