@@ -54,7 +54,8 @@ public class DesertSkyRangersIcon extends SvgIcon {
 			double scale = 0.75;
 			double offsetX = 16 - (16 * scale) - 3;
 			double offsetY = 16 - (16 * scale);
-			transform( Affine.rotate( 15, 16, 16 ).createConcatenation( Affine.translate( offsetX, offsetY ) ).createConcatenation( Affine.scale( scale, scale ) ) );
+			double angle = 45 - Math.toDegrees( Math.atan2( 1, 2 ));
+			transform( Affine.rotate( angle, 16, 16 ).createConcatenation( Affine.translate( offsetX, offsetY ) ).createConcatenation( Affine.scale( scale, scale ) ) );
 			draw( new FlightDeckIcon( false, THEME[ 1 ] ) );
 		}
 
