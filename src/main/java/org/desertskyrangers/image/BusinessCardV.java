@@ -11,6 +11,8 @@ import java.nio.file.Paths;
 // Need to produce an image that is 600x1050
 public class BusinessCardV extends SvgIcon {
 
+	private static final double DPI = 350;
+
 	public BusinessCardV() {
 		super( 32, 56 );
 
@@ -22,7 +24,7 @@ public class BusinessCardV extends SvgIcon {
 		double indent = 2;
 
 		// Background
-		fill( "M0,0 L0,56 L32,56 L32,0 Z");
+		fill( "M0,0 L0,56 L32,56 L32,0 Z" );
 		fill( "M0,0 L0,40 L32,40 L32,0 Z", DesertSkyRangersIcon.THEME[ 1 ] );
 
 		// DSR logo
@@ -40,7 +42,7 @@ public class BusinessCardV extends SvgIcon {
 		Path root = Paths.get( System.getProperty( "user.dir" ) );
 
 		BusinessCardV card = new BusinessCardV();
-		card.resize( 600, 1050 );
+		card.resize( 2 * DPI, 3.5 * DPI );
 
 		new Thread( () -> {
 			try {
