@@ -48,15 +48,12 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 		fill( mountains, THEME[ 2 ] );
 		if( renderPlane ) {
-			//fill( plane, THEME[ 1 ] );
-			//fill( wisps, Colors.mix( THEME[ 0 ], THEME[ 1 ], 0.5 ) );
-
 			double scale = 0.75;
-			double offsetX = 16 - (16 * scale) - 3;
-			double offsetY = 16 - (16 * scale);
-			double angle = 45 - Math.toDegrees( Math.atan2( 1, 2 ));
+			double offsetX = 16 - (16 * scale);
+			double offsetY = 16 - (16 * scale) - 2;
+			double angle = Math.toDegrees( Math.atan2( -1, 2 ) );
 			transform( Affine.rotate( angle, 16, 16 ).createConcatenation( Affine.translate( offsetX, offsetY ) ).createConcatenation( Affine.scale( scale, scale ) ) );
-			draw( new FlightDeckIcon( false, THEME[ 1 ] ) );
+			draw( new DsrJet( THEME[ 1 ], false ) );
 		}
 
 	}
