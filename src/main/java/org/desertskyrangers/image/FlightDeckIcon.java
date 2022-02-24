@@ -16,8 +16,8 @@ public class FlightDeckIcon extends SvgIcon {
 	}
 
 	public FlightDeckIcon( Paint paint, boolean flame ) {
-		double scale = 0.8;
-		double offsetX = 16 - (16 * scale) + 2;
+		double scale = 0.9;
+		double offsetX = 16 - (16 * scale) + 2.25;
 		double offsetY = 16 - (16 * scale);
 		double angle = Math.toDegrees( Math.atan2( -1, 2 ) );
 		transform( Affine.rotate( angle, 16, 16 ).createConcatenation( Affine.translate( offsetX, offsetY ) ).createConcatenation( Affine.scale( scale, scale ) ) );
