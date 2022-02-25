@@ -31,7 +31,7 @@ public class DsrJet extends SvgIcon {
 		fill( "M3.5,14 L5.5,9 L8.5,9 L10.5,14 Z", paint, null );
 
 		// Nozzle
-		fill( "M2.5,17.5 A6.5,6.5 0 0 1 0,17 L1,16.5 L-0.5,16 L1,15.5 L0,15 A6.5,6.5 0 0 1 2.5,14.5 Z", paint, null );
+		fill( "M2.5,17.5 A6.5,6.5 0 0 1 0,17 L0,15 A6.5,6.5 0 0 1 2.5,14.5 Z", paint, null );
 
 		// Flame
 		if( flame ) fill( "M-6,16 L-3,15.4 C-3,15.7 -2,16 -1.5,16 C-1.5,16 -3,16.3 -3,16.6 Z", paint, null );
