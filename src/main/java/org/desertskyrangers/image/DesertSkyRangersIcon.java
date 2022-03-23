@@ -68,8 +68,8 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 		StringBuilder svg = new StringBuilder();
 		svg.append( "<svg width=\"" + getGridX() + "\" height=\"" + getGridY() + "\" xmlns=\"http://www.w3.org/2000/svg\">" );
-		svg.append( "<path fill=\"" + Colors.toString( THEME[ 2 ] ) + "\" d=\"" + getForeMountainPath() + "\"/>" );
-		svg.append( "<path fill=\"" + Colors.toString( THEME[ 3 ] ) + "\" d=\"" + getBackMountainPath() + "\"/>" );
+		svg.append( "<path fill=\"" + Colors.toString( THEME[ 3 ] ) + "\" d=\"" + getForeMountainPath() + "\"/>" );
+		svg.append( "<path fill=\"" + Colors.toString( THEME[ 2 ] ) + "\" d=\"" + getBackMountainPath() + "\"/>" );
 		svg.append( "<path fill=\"" + Colors.toString( THEME[ 0 ] ) + "\" d=\"" + getSunPath() + "\"/>" );
 		svg.append( "<path " + jetTransform + " fill=\"" + Colors.toString( THEME[ 1 ] ) + "\" d=\"" + new DsrJet( THEME[ 1 ], false ).getPath( false ) + "\"/>" );
 		svg.append( "</svg>" );
