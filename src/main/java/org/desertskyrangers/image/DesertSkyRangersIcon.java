@@ -15,7 +15,7 @@ public class DesertSkyRangersIcon extends SvgIcon {
 	// Color theme is: sun, plane, mountains
 	private static final Color[] ARIZONA = new Color[]{ Color.web( "#b37c52" ), Color.web( "#4D4033" ), Color.web( "#6A806F" ) };
 
-	private static final Color[] UTAH = new Color[]{ Color.web( "#b37c52" ), Color.web( "#403830" ), Color.web( "#9C916D" ) };
+	private static final Color[] UTAH = new Color[]{ Color.web( "#b37c52" ), Color.web( "#403830" ), Color.web( "#9C916D" ), Color.web( "#807760" ) };
 
 	public static final Color[] THEME = UTAH;
 
@@ -46,7 +46,8 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		fill( sun, THEME[ 0 ] );
 		restore();
 
-		fill( mountains, THEME[ 2 ] );
+		fill( foreMountain, THEME[ 2 ] );
+		fill( backMountain, THEME[ 3 ] );
 		if( renderPlane ) {
 			double scale = 0.75;
 			double offsetX = 16 - (16 * scale);
