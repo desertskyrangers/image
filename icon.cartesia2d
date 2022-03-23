@@ -1,0 +1,69 @@
+{
+  "layers" : {
+    "34486f8e-c3be-49c3-bb93-bc773750dc26" : {
+      "draw-width" : "0.05",
+      "draw-paint" : "#ffff00ff",
+      "shapes" : {
+        "5bb57795-5a2f-4568-9863-3c1a6cc41275" : {
+          "id" : "5bb57795-5a2f-4568-9863-3c1a6cc41275",
+          "shape" : "line",
+          "point" : "32.0,-32.0,0.0",
+          "origin" : "32.0,0.0,0.0"
+        },
+        "99dff572-23f5-44d7-9888-ded14d83a4b6" : {
+          "extent" : 243.41169063021167,
+          "fill-paint" : "none",
+          "shape" : "arc",
+          "origin" : "16.0,-16.0,0.0",
+          "start" : -28.27353445368781,
+          "id" : "99dff572-23f5-44d7-9888-ded14d83a4b6",
+          "type" : "OPEN",
+          "radius" : 15.0
+        },
+        "b57c6651-10a3-445f-8f49-c08372236dc1" : {
+          "id" : "b57c6651-10a3-445f-8f49-c08372236dc1",
+          "shape" : "line",
+          "point" : "9.0,-22.0,0.0",
+          "origin" : "0.0,-26.5,0.0"
+        },
+        "50ba4179-c7ca-487c-94d0-0ee4e55b4ea4" : {
+          "id" : "50ba4179-c7ca-487c-94d0-0ee4e55b4ea4",
+          "shape" : "line",
+          "point" : "32.0,-24.5,0.0",
+          "origin" : "23.0,-20.0,0.0"
+        },
+        "93ba5c48-ba6a-4986-b432-6af08f08adfb" : {
+          "id" : "93ba5c48-ba6a-4986-b432-6af08f08adfb",
+          "shape" : "line",
+          "point" : "32.0,-32.0,0.0",
+          "origin" : "0.0,-32.0,0.0"
+        },
+        "8f8da615-4b6a-4af3-86f1-a17139c384a0" : {
+          "id" : "8f8da615-4b6a-4af3-86f1-a17139c384a0",
+          "shape" : "line",
+          "point" : "32.0,0.0,0.0",
+          "origin" : "0.0,0.0,0.0"
+        },
+        "6d147020-7c9a-4e27-b747-1d756e9b4f0c" : {
+          "id" : "6d147020-7c9a-4e27-b747-1d756e9b4f0c",
+          "shape" : "line",
+          "point" : "0.0,0.0,0.0",
+          "origin" : "NaN,NaN,NaN"
+        },
+        "9ed019cd-b35f-4588-b82d-4021abab8749" : {
+          "id" : "9ed019cd-b35f-4588-b82d-4021abab8749",
+          "shape" : "line",
+          "point" : "0.0,-32.0,0.0",
+          "origin" : "0.0,0.0,0.0"
+        }
+      },
+      "name" : "construction",
+      "layers" : { },
+      "id" : "34486f8e-c3be-49c3-bb93-bc773750dc26",
+      "draw-cap" : "round"
+    }
+  },
+  "unit" : "centimeter",
+  "id" : "3138ddf8-c6d3-4621-8903-eb47595104ad",
+  "codec-version" : "1"
+}

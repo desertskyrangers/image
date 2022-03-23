@@ -6,6 +6,9 @@ import com.avereon.zarra.image.VectorImageWriter;
 import javafx.scene.paint.Color;
 import javafx.scene.transform.Affine;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class DesertSkyRangersIcon extends SvgIcon {
@@ -13,11 +16,19 @@ public class DesertSkyRangersIcon extends SvgIcon {
 	private final boolean renderPlane;
 
 	// Color theme is: sun, plane, mountains
-	private static final Color[] ARIZONA = new Color[]{ Color.web( "#b37c52" ), Color.web( "#4D4033" ), Color.web( "#6A806F" ) };
+	private static final Color[] ARIZONA = new Color[]{ Color.web( "#b37c52" ), Color.web( "#4D4033" ), Color.web( "#6A806F" ), Color.web( "#607C6A" ) };
 
 	private static final Color[] UTAH = new Color[]{ Color.web( "#b37c52" ), Color.web( "#403830" ), Color.web( "#9C916D" ), Color.web( "#807760" ) };
 
 	public static final Color[] THEME = UTAH;
+
+	private static final double scale = 0.75;
+
+	private static final double offsetX = 16 - (16 * scale);
+
+	private static final double offsetY = 16 - (16 * scale) - 2;
+
+	private static final double angle = Math.toDegrees( Math.atan2( -1, 2 ) );
 
 	public DesertSkyRangersIcon() {
 		this( true );
@@ -29,34 +40,41 @@ public class DesertSkyRangersIcon extends SvgIcon {
 	}
 
 	protected void doRender2() {
-		String sun = circle( 16, 16, 15 );
-
-		String foreMountain = "M1,31 L1,27 L9,23 C10,22.5 10.75,22.25 11.5,22.25 C12.25,22.25 13,22.5 14,23 C18,25 26,29 30,29 L31,29 L31,31 Z";
-		String backMountain = "M15,22.5 L18,21 C19,20.5 19.75,20.25 20.5,20.25 C21.25,20.25 22,20.5 23,21 L31,25 L31,28 L30,28 C26,28 19,24.5 15,22.5 Z";
-		String mountains = foreMountain + backMountain;
-
-		String vrr = "10.48875058760044,10.48875058760044";
-		String plane = "M16,7 L28,13 L27,14 L16,12 L5,14 L4,13 Z";
-		String wisps = "M7.5,14.75 L10,17.5 A" + vrr + ",0,0,1,6,15 Z M24.5,14.75 L26,15 A" + vrr + ",0,0,1,22,17.5 Z";
-		wisps = "M 6,15 L7.5,14.75 L9,18 Z M23,18 L24.5,14.75 L26,15 Z";
-
-		String sunMountainClip = "M0,0 L0,26.5 L9,22 C10,21.5 10.75,21.25 11.5,21.25 C12.25,21.25 13,21.5 14,22 L18,20 C19,19.5 19.75,19.25 20.5,19.25 C21.25,19.25 22,19.5 23,20  L32,24.5 L32,0 Z";
-
-		clip( sunMountainClip );
-		fill( sun, THEME[ 0 ] );
-		restore();
-
-		fill( foreMountain, THEME[ 2 ] );
-		fill( backMountain, THEME[ 3 ] );
+		fill( getSunPath(), THEME[ 0 ] );
+		fill( getForeMountainPath(), THEME[ 3 ] );
+		fill( getBackMountainPath(), THEME[ 2 ] );
 		if( renderPlane ) {
-			double scale = 0.75;
-			double offsetX = 16 - (16 * scale);
-			double offsetY = 16 - (16 * scale) - 2;
-			double angle = Math.toDegrees( Math.atan2( -1, 2 ) );
 			transform( Affine.rotate( angle, 16, 16 ).createConcatenation( Affine.translate( offsetX, offsetY ) ).createConcatenation( Affine.scale( scale, scale ) ) );
 			draw( new DsrJet( THEME[ 1 ], false ) );
 		}
+	}
 
+	public String getForeMountainPath() {
+		return "M1,31 L1,27 L9,23 C10,22.5 10.75,22.25 11.5,22.25 C12.25,22.25 13,22.5 14,23 C18,25 26,29 30,29 L31,29 L31,31 Z";
+	}
+
+	public String getBackMountainPath() {
+		return "M15,22.5 L18,21 C19,20.5 19.75,20.25 20.5,20.25 C21.25,20.25 22,20.5 23,21 L31,25 L31,28 L30,28 C26,28 19,24.5 15,22.5 Z";
+	}
+
+	public String getSunPath() {
+		String sLeft = "3.733500838578397,24.633249580710796";
+		String sRight = "29.21044369139217,23.105221845696086";
+		return "M" + sLeft + " L9,22 C10,21.5 10.75,21.25 11.5,21.25 C12.25,21.25 13,21.5 14,22 L18,20 C19,19.5 19.75,19.25 20.5,19.25 C21.25,19.25 22,19.5 23,20  L" + sRight + " A15,15 0 1 0 " + sLeft + " Z";
+	}
+
+	public String getSvg() {
+		String jetTransform = "transform=\"rotate(" + angle + ",16,16) scale(" + scale + "," + scale + ") translate(" + offsetX + "," + offsetY + ")\"";
+
+		StringBuilder svg = new StringBuilder();
+		svg.append( "<svg width=\"" + getGridX() + "\" height=\"" + getGridY() + "\" xmlns=\"http://www.w3.org/2000/svg\">" );
+		svg.append( "<path fill=\"" + Colors.toString( THEME[ 2 ] ) + "\" d=\"" + getForeMountainPath() + "\"/>" );
+		svg.append( "<path fill=\"" + Colors.toString( THEME[ 3 ] ) + "\" d=\"" + getBackMountainPath() + "\"/>" );
+		svg.append( "<path fill=\"" + Colors.toString( THEME[ 0 ] ) + "\" d=\"" + getSunPath() + "\"/>" );
+		svg.append( "<path " + jetTransform + " fill=\"" + Colors.toString( THEME[ 1 ] ) + "\" d=\"" + new DsrJet( THEME[ 1 ], false ).getPath( false ) + "\"/>" );
+		svg.append( "</svg>" );
+
+		return svg.toString();
 	}
 
 	protected void doRender1() {
@@ -88,6 +106,12 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 	public static void main( String[] commands ) {
 		proof( new DesertSkyRangersIcon() );
+
+		try {
+			Files.writeString( Path.of( "icon.svg" ), new DesertSkyRangersIcon().getSvg() );
+		} catch( IOException e ) {
+			e.printStackTrace();
+		}
 
 		try {
 			DesertSkyRangersIcon favicon = new DesertSkyRangersIcon( false ).resize( 64 );
