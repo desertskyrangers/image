@@ -33,8 +33,8 @@ public class Banner extends SvgIcon {
 		text( "Desert Sky Rangers", DesertSkyRangersIcon.THEME[ 1 ] );
 
 		setFont( Font.font(getFont().getName(), FontWeight.NORMAL, getFont().getSize()) );
-		transform( Affine.translate( 35, 26 ).createConcatenation( Affine.scale( 0.4,0.4 ) ) );
-		text( "https://www.desertskyrangers.org", DesertSkyRangersIcon.THEME[ 1 ] );
+		transform( Affine.translate( 42, 26 ).createConcatenation( Affine.scale( 0.5,0.5 ) ) );
+		text( "desertskyrangers.org", DesertSkyRangersIcon.THEME[ 1 ] );
 	}
 
 	public static void main( String[] commands ) {
