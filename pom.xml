@@ -13,7 +13,7 @@
     </repositories>
 
     <properties>
-        <zarra.version>[0.8,)</zarra.version>
+        <zarra.version>[0.9-SNAPSHOT,)</zarra.version>
     </properties>
 
     <dependencies>

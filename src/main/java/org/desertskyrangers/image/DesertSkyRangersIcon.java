@@ -36,10 +36,9 @@ public class DesertSkyRangersIcon extends SvgIcon {
 
 	public DesertSkyRangersIcon( boolean renderPlane ) {
 		this.renderPlane = renderPlane;
-		doRender2();
 	}
 
-	protected void doRender2() {
+	public void define() {
 		fill( getSunPath(), THEME[ 0 ] );
 		fill( getForeMountainPath(), THEME[ 3 ] );
 		fill( getBackMountainPath(), THEME[ 2 ] );
@@ -63,7 +62,8 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		return "M" + sLeft + " L9,22 C10,21.5 10.75,21.25 11.5,21.25 C12.25,21.25 13,21.5 14,22 L18,20 C19,19.5 19.75,19.25 20.5,19.25 C21.25,19.25 22,19.5 23,20  L" + sRight + " A15,15 0 1 0 " + sLeft + " Z";
 	}
 
-	public String getSvg() {
+	@Override
+	public String toSvg() {
 		String jetTransform = "transform=\"rotate(" + angle + ",16,16) scale(" + scale + "," + scale + ") translate(" + offsetX + "," + offsetY + ")\"";
 
 		StringBuilder svg = new StringBuilder();
@@ -108,7 +108,7 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		proof( new DesertSkyRangersIcon() );
 
 		try {
-			Files.writeString( Path.of( "icon.svg" ), new DesertSkyRangersIcon().getSvg() );
+			Files.writeString( Path.of( "icon.svg" ), new DesertSkyRangersIcon().toSvg() );
 		} catch( IOException e ) {
 			e.printStackTrace();
 		}
