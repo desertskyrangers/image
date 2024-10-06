@@ -5,10 +5,10 @@ plugins {
 
 group = 'com.desertskyrangers'
 version = '1.0.0-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_17
+sourceCompatibility = JavaVersion.VERSION_21
 
 javafx {
-	version = '14.0.1'
+	version = '21.0.1'
 	modules = [ 'javafx.swing','javafx.controls','javafx.graphics' ]
 	configuration = 'compileOnly'
 }
@@ -18,23 +18,15 @@ repositories {
 	maven {
 		name "avn-central"
 		url "https://repo.avereon.com/central"
-//		credentials {
-//			username project.properties['avnUsername']
-//			password project.properties['avnPassword']
-//		}
 	}
 	maven {
 		name "avn"
 		url "https://repo.avereon.com/avn"
-//		credentials {
-//			username project.properties['avnUsername']
-//			password project.properties['avnPassword']
-//		}
 	}
 }
 
 dependencies {
-	implementation 'com.avereon:zarra:0.8-SNAPSHOT'
+	implementation 'com.avereon:zarra:0.10-SNAPSHOT'
 }
 
 test {
