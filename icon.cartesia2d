@@ -1,69 +1,309 @@
 {
+  "author" : "Mark Soderquist",
+  "codec-version" : "1",
+  "id" : "3138ddf8-c6d3-4621-8903-eb47595104ad",
   "layers" : {
     "34486f8e-c3be-49c3-bb93-bc773750dc26" : {
-      "draw-width" : "0.05",
+      "draw-cap" : "round",
       "draw-paint" : "#ffff00ff",
+      "draw-width" : "0.05",
+      "font-posture" : "REGULAR",
+      "font-strikethrough" : "false",
+      "font-underline" : "false",
+      "font-weight" : "normal",
+      "id" : "34486f8e-c3be-49c3-bb93-bc773750dc26",
+      "layers" : { },
+      "name" : "construction",
       "shapes" : {
+        "06fffdbc-06c2-4e0f-9f6d-fc22db2b9273" : {
+          "draw-paint" : "none",
+          "extent" : 88.71491418332297,
+          "fill-paint" : "none",
+          "id" : "06fffdbc-06c2-4e0f-9f6d-fc22db2b9273",
+          "order" : 8,
+          "origin" : "16.0,-16.0,0.0",
+          "radii" : "15.008331019803636,15.008331019803636,0.0",
+          "shape" : "arc",
+          "start" : -141.39557484326724,
+          "type" : "OPEN"
+        },
+        "1d0e15b4-6ece-4475-99c7-bb2932142c15" : {
+          "draw-paint" : "none",
+          "extent" : -16.72760665036513,
+          "fill-paint" : "none",
+          "id" : "1d0e15b4-6ece-4475-99c7-bb2932142c15",
+          "origin" : "16.0,-16.0,0.0",
+          "radii" : "14.988328792764058,14.988328792764058,0.0",
+          "shape" : "arc",
+          "start" : -31.70060572395553,
+          "type" : "OPEN"
+        },
+        "2a8da1ef-ab14-4596-be12-e0cadbd68281" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "2a8da1ef-ab14-4596-be12-e0cadbd68281",
+          "order" : 5,
+          "origin" : "23.0,-20.0,0.0",
+          "origin-control" : "22.0,-19.5,0.0",
+          "point" : "20.5,-19.25,0.0",
+          "point-control" : "21.25,-19.25,0.0",
+          "shape" : "curve"
+        },
+        "3298c9a3-ef1b-4f6f-8083-1c505b27b3af" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "3298c9a3-ef1b-4f6f-8083-1c505b27b3af",
+          "order" : 13,
+          "origin" : "11.5,-22.25,0.0",
+          "origin-control" : "12.25,-22.25,0.0",
+          "point" : "14.0,-23.0,0.0",
+          "point-control" : "13.0,-22.5,0.0",
+          "shape" : "curve"
+        },
+        "36465ba3-4dd8-4086-b056-72c0cdfde378" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "36465ba3-4dd8-4086-b056-72c0cdfde378",
+          "order" : 3,
+          "origin" : "31.0,-25.0,0.0",
+          "point" : "31.0,-28.0,0.0",
+          "shape" : "line"
+        },
+        "44d1e6de-aaff-4265-82b9-362010a8a9ec" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "44d1e6de-aaff-4265-82b9-362010a8a9ec",
+          "order" : 19,
+          "origin" : "31.0,-29.0,0.0",
+          "point" : "30.0,-29.0,0.0",
+          "shape" : "line"
+        },
+        "50ba4179-c7ca-487c-94d0-0ee4e55b4ea4" : {
+          "id" : "50ba4179-c7ca-487c-94d0-0ee4e55b4ea4",
+          "order" : 4,
+          "origin" : "23.0,-20.0,0.0",
+          "point" : "32.0,-24.5,0.0",
+          "shape" : "line"
+        },
         "5bb57795-5a2f-4568-9863-3c1a6cc41275" : {
           "id" : "5bb57795-5a2f-4568-9863-3c1a6cc41275",
-          "shape" : "line",
+          "order" : 0,
+          "origin" : "32.0,0.0,0.0",
           "point" : "32.0,-32.0,0.0",
-          "origin" : "32.0,0.0,0.0"
+          "shape" : "line"
+        },
+        "638bb992-b4eb-462c-9d8d-d6ec8f324b8b" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "638bb992-b4eb-462c-9d8d-d6ec8f324b8b",
+          "order" : 14,
+          "origin" : "14.0,-23.0,0.0",
+          "origin-control" : "16.698095496743917,-24.34904774837196,0.0",
+          "point" : "25.0989037365621,-27.935658809323048,0.0",
+          "point-control" : "21.216120820875286,-26.608060410437645,0.0",
+          "shape" : "curve"
+        },
+        "665afcf4-cf74-46c4-82b3-7d7b60df8ed3" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "665afcf4-cf74-46c4-82b3-7d7b60df8ed3",
+          "order" : 12,
+          "origin" : "1.0,-31.0,0.0",
+          "point" : "31.0,-31.0,0.0",
+          "shape" : "line"
+        },
+        "6d147020-7c9a-4e27-b747-1d756e9b4f0c" : {
+          "id" : "6d147020-7c9a-4e27-b747-1d756e9b4f0c",
+          "order" : 29,
+          "origin" : "NaN,NaN,NaN",
+          "point" : "0.0,0.0,0.0",
+          "shape" : "line"
+        },
+        "7028a216-8621-4681-8ac0-fa3579338358" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "7028a216-8621-4681-8ac0-fa3579338358",
+          "order" : 23,
+          "origin" : "15.000937780618404,-22.499531109690793,0.0",
+          "origin-control" : "17.957628866708447,-23.970072466813463,0.0",
+          "point" : "25.945624241742124,-27.213142228851936,0.0",
+          "point-control" : "22.32649882930437,-26.081757029866523,0.0",
+          "shape" : "curve"
+        },
+        "7d9bf3d0-4149-42ed-bfe7-05bd41a72d88" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "7d9bf3d0-4149-42ed-bfe7-05bd41a72d88",
+          "order" : 11,
+          "origin" : "1.0,-31.0,0.0",
+          "point" : "1.0,-27.0,0.0",
+          "shape" : "line"
+        },
+        "8b5337f0-216b-4a66-ab72-63acd812ffb9" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "8b5337f0-216b-4a66-ab72-63acd812ffb9",
+          "order" : 21,
+          "origin" : "9.0,-22.0,0.0",
+          "origin-control" : "10.0,-21.5,0.0",
+          "point" : "11.5,-21.25,0.0",
+          "point-control" : "10.75,-21.25,0.0",
+          "shape" : "curve"
+        },
+        "8d01ffac-b8da-4ffd-a848-803049d82f8e" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "8d01ffac-b8da-4ffd-a848-803049d82f8e",
+          "order" : 28,
+          "origin" : "1.0,-27.0,0.0",
+          "point" : "9.0,-23.0,0.0",
+          "shape" : "line"
+        },
+        "8f8da615-4b6a-4af3-86f1-a17139c384a0" : {
+          "id" : "8f8da615-4b6a-4af3-86f1-a17139c384a0",
+          "order" : 20,
+          "origin" : "0.0,0.0,0.0",
+          "point" : "32.0,0.0,0.0",
+          "shape" : "line"
+        },
+        "93ba5c48-ba6a-4986-b432-6af08f08adfb" : {
+          "id" : "93ba5c48-ba6a-4986-b432-6af08f08adfb",
+          "order" : 15,
+          "origin" : "0.0,-32.0,0.0",
+          "point" : "32.0,-32.0,0.0",
+          "shape" : "line"
+        },
+        "979c9ac4-4e21-4376-a3a6-93f5c692810f" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "979c9ac4-4e21-4376-a3a6-93f5c692810f",
+          "order" : 6,
+          "origin" : "14.0,-22.0,0.0",
+          "point" : "18.0,-20.0,0.0",
+          "shape" : "line"
         },
         "99dff572-23f5-44d7-9888-ded14d83a4b6" : {
           "extent" : 243.41169063021167,
           "fill-paint" : "none",
-          "shape" : "arc",
-          "origin" : "16.0,-16.0,0.0",
-          "start" : -28.27353445368781,
           "id" : "99dff572-23f5-44d7-9888-ded14d83a4b6",
-          "type" : "OPEN",
-          "radius" : 15.0
+          "order" : 2,
+          "origin" : "16.0,-16.0,0.0",
+          "radii" : "15.0,15.0,0.0",
+          "shape" : "arc",
+          "start" : -28.27353445368781,
+          "type" : "OPEN"
         },
-        "b57c6651-10a3-445f-8f49-c08372236dc1" : {
-          "id" : "b57c6651-10a3-445f-8f49-c08372236dc1",
-          "shape" : "line",
-          "point" : "9.0,-22.0,0.0",
-          "origin" : "0.0,-26.5,0.0"
-        },
-        "50ba4179-c7ca-487c-94d0-0ee4e55b4ea4" : {
-          "id" : "50ba4179-c7ca-487c-94d0-0ee4e55b4ea4",
-          "shape" : "line",
-          "point" : "32.0,-24.5,0.0",
-          "origin" : "23.0,-20.0,0.0"
-        },
-        "93ba5c48-ba6a-4986-b432-6af08f08adfb" : {
-          "id" : "93ba5c48-ba6a-4986-b432-6af08f08adfb",
-          "shape" : "line",
-          "point" : "32.0,-32.0,0.0",
-          "origin" : "0.0,-32.0,0.0"
-        },
-        "8f8da615-4b6a-4af3-86f1-a17139c384a0" : {
-          "id" : "8f8da615-4b6a-4af3-86f1-a17139c384a0",
-          "shape" : "line",
-          "point" : "32.0,0.0,0.0",
-          "origin" : "0.0,0.0,0.0"
-        },
-        "6d147020-7c9a-4e27-b747-1d756e9b4f0c" : {
-          "id" : "6d147020-7c9a-4e27-b747-1d756e9b4f0c",
-          "shape" : "line",
-          "point" : "0.0,0.0,0.0",
-          "origin" : "NaN,NaN,NaN"
+        "9d566b6b-ef3a-4214-b6bc-e49bb6503da3" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "9d566b6b-ef3a-4214-b6bc-e49bb6503da3",
+          "order" : 7,
+          "origin" : "23.0,-21.0,0.0",
+          "point" : "31.0,-25.0,0.0",
+          "shape" : "line"
         },
         "9ed019cd-b35f-4588-b82d-4021abab8749" : {
           "id" : "9ed019cd-b35f-4588-b82d-4021abab8749",
-          "shape" : "line",
+          "order" : 17,
+          "origin" : "0.0,0.0,0.0",
           "point" : "0.0,-32.0,0.0",
-          "origin" : "0.0,0.0,0.0"
+          "shape" : "line"
+        },
+        "a2584fde-e07e-4b22-af23-0b7870a309fc" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "a2584fde-e07e-4b22-af23-0b7870a309fc",
+          "order" : 27,
+          "origin" : "31.0,-28.0,0.0",
+          "point" : "30.0,-28.0,0.0",
+          "shape" : "line"
+        },
+        "b57c6651-10a3-445f-8f49-c08372236dc1" : {
+          "id" : "b57c6651-10a3-445f-8f49-c08372236dc1",
+          "order" : 25,
+          "origin" : "0.0,-26.5,0.0",
+          "point" : "9.0,-22.0,0.0",
+          "shape" : "line"
+        },
+        "b620cd71-f7d5-4563-bc3c-4b435c863a79" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "b620cd71-f7d5-4563-bc3c-4b435c863a79",
+          "order" : 10,
+          "origin" : "23.0,-21.0,0.0",
+          "origin-control" : "22.0,-20.5,0.0",
+          "point" : "20.5,-20.25,0.0",
+          "point-control" : "21.25,-20.25,0.0",
+          "shape" : "curve"
+        },
+        "b8ccf05a-e969-48aa-a88d-96e2da921932" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "b8ccf05a-e969-48aa-a88d-96e2da921932",
+          "order" : 18,
+          "origin" : "18.0,-21.0,0.0",
+          "origin-control" : "19.0,-20.5,0.0",
+          "point" : "20.5,-20.25,0.0",
+          "point-control" : "19.75,-20.25,0.0",
+          "shape" : "curve"
+        },
+        "c648e82f-f500-4996-949a-72677e532953" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "c648e82f-f500-4996-949a-72677e532953",
+          "order" : 1,
+          "origin" : "18.0,-20.0,0.0",
+          "origin-control" : "19.0,-19.5,0.0",
+          "point" : "20.5,-19.25,0.0",
+          "point-control" : "19.75,-19.25,0.0",
+          "shape" : "curve"
+        },
+        "c8eddefa-f13f-4ace-80b1-c603b0ae2233" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "c8eddefa-f13f-4ace-80b1-c603b0ae2233",
+          "order" : 16,
+          "origin" : "31.0,-31.0,0.0",
+          "point" : "31.0,-29.0,0.0",
+          "shape" : "line"
+        },
+        "e3fef20d-8374-4be6-89ce-9dc29ac3d031" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "e3fef20d-8374-4be6-89ce-9dc29ac3d031",
+          "order" : 26,
+          "origin" : "15.0,-22.5,0.0",
+          "point" : "18.0,-21.0,0.0",
+          "shape" : "line"
+        },
+        "faaa7acf-f86d-44d5-9699-fdb8fb1255ca" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "faaa7acf-f86d-44d5-9699-fdb8fb1255ca",
+          "order" : 24,
+          "origin" : "9.0,-23.0,0.0",
+          "origin-control" : "10.0,-22.5,0.0",
+          "point" : "11.5,-22.25,0.0",
+          "point-control" : "10.75,-22.25,0.0",
+          "shape" : "curve"
+        },
+        "fd2e2d15-87b4-4390-bb68-5bc9f2c31852" : {
+          "draw-paint" : "none",
+          "fill-paint" : "none",
+          "id" : "fd2e2d15-87b4-4390-bb68-5bc9f2c31852",
+          "order" : 22,
+          "origin" : "11.5,-21.25,0.0",
+          "origin-control" : "12.25,-21.25,0.0",
+          "point" : "14.0,-22.0,0.0",
+          "point-control" : "13.0,-21.5,0.0",
+          "shape" : "curve"
         }
       },
-      "name" : "construction",
-      "layers" : { },
-      "id" : "34486f8e-c3be-49c3-bb93-bc773750dc26",
-      "draw-cap" : "round"
+      "text-draw-cap" : "round",
+      "text-draw-width" : "0.05",
+      "text-size" : "1"
     }
   },
-  "unit" : "centimeter",
-  "id" : "3138ddf8-c6d3-4621-8903-eb47595104ad",
-  "codec-version" : "1"
+  "name" : "Desert Sky Rangers Logo",
+  "unit" : "centimeter"
 }
