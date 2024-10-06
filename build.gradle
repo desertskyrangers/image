@@ -18,18 +18,18 @@ repositories {
 	maven {
 		name "avn-central"
 		url "https://repo.avereon.com/central"
-		credentials {
-			username project.properties['avnUsername']
-			password project.properties['avnPassword']
-		}
+//		credentials {
+//			username project.properties['avnUsername']
+//			password project.properties['avnPassword']
+//		}
 	}
 	maven {
 		name "avn"
 		url "https://repo.avereon.com/avn"
-		credentials {
-			username project.properties['avnUsername']
-			password project.properties['avnPassword']
-		}
+//		credentials {
+//			username project.properties['avnUsername']
+//			password project.properties['avnPassword']
+//		}
 	}
 }
 

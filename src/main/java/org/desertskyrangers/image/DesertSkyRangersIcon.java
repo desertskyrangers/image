@@ -62,7 +62,7 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		return "M" + sLeft + " L9,22 C10,21.5 10.75,21.25 11.5,21.25 C12.25,21.25 13,21.5 14,22 L18,20 C19,19.5 19.75,19.25 20.5,19.25 C21.25,19.25 22,19.5 23,20  L" + sRight + " A15,15 0 1 0 " + sLeft + " Z";
 	}
 
-	@Override
+	//@Override
 	public String toSvg() {
 		String jetTransform = "transform=\"rotate(" + angle + ",16,16) scale(" + scale + "," + scale + ") translate(" + offsetX + "," + offsetY + ")\"";
 
