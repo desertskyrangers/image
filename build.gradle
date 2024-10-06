@@ -10,7 +10,6 @@ sourceCompatibility = JavaVersion.VERSION_21
 javafx {
 	version = '21.0.1'
 	modules = [ 'javafx.swing','javafx.controls','javafx.graphics' ]
-	configuration = 'compileOnly'
 }
 
 repositories {
