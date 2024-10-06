@@ -1,9 +1,15 @@
 package org.desertskyrangers.image;
 
+import com.avereon.zarra.color.Paints;
 import com.avereon.zarra.image.SvgIcon;
+import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 
 public class DsrJet extends SvgIcon {
+
+	private static final Color[] UTAH = new Color[]{ Color.web( "#b37c52" ), Color.web( "#403830" ), Color.web( "#9C916D" ), Color.web( "#807760" ) };
+
+	public static final Color[] THEME = UTAH;
 
 	private final Paint paint;
 
@@ -14,10 +20,23 @@ public class DsrJet extends SvgIcon {
 	}
 
 	public DsrJet( Paint paint, boolean flame ) {
+		super( 33, 9 );
 		this.paint = paint;
 		this.flame = flame;
 
 		fill( getPath( flame ), paint );
+	}
+
+	public String toSvg() {
+		String jetTransform = "transform=\" translate(0,-9)\"";
+
+		StringBuilder svg = new StringBuilder();
+
+		svg.append( "<svg width=\"" + getGridX() + "\" height=\"" + getGridY() + "\" xmlns=\"http://www.w3.org/2000/svg\">" );
+		svg.append( "<path " + jetTransform + " fill=\"" + Paints.toString( paint ) + "\" d=\"" + getPath( flame ) + "\"/>" );
+		svg.append( "</svg>" );
+
+		return svg.toString();
 	}
 
 	public String getPath( boolean renderFlame ) {

@@ -133,7 +133,13 @@ public class DesertSkyRangersIcon extends SvgIcon {
 		proof( new DesertSkyRangersIcon() );
 
 		try {
-			Files.writeString( Path.of( "icon.svg" ), new DesertSkyRangersIcon().toSvg() );
+			Files.writeString( Path.of( "dsr-jet.svg" ), new DsrJet( THEME[ 1 ], false ).toSvg() );
+		} catch( IOException e ) {
+			e.printStackTrace();
+		}
+
+		try {
+			Files.writeString( Path.of( "icon-square.svg" ), new DesertSkyRangersIcon().toSvg() );
 		} catch( IOException e ) {
 			e.printStackTrace();
 		}
